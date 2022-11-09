@@ -6,7 +6,7 @@ public class Game {
 	Console console = System.console();
 	String answer = console.readLine("Which continent does Sweden belong to? ");
 	String continent = "Asia";
-	if (answer.equals(continent)) {
+	if (answer.equalsIgnoreCase(continent)) {
 		System.out.println("Correct!");
 	} else {
 		System.out.println("Wrong!");
